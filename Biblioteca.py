@@ -38,5 +38,23 @@ def listaUnica(a):
             nova_lista.append(x)
     print(nova_lista)
 
+def num_primo(numero):
+    if numero == 1:
+        print("Não é Primo")
+    elif numero == 2:
+        print("É Primo")
+    else:
+        for x in range(2,numero):
+            if (numero % x==0):
+                print("Não é Primo")
+                break
+            print("É primo")
+            break
+
+
+
+
+
+
 
 
