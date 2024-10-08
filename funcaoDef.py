@@ -1,7 +1,6 @@
-from Biblioteca import imprimir_nome, imprimir_numeros
-imprimir_nome()
+"""from Biblioteca import imprimir (chama a função na biblioteca)"""
 
-imprimir_numeros()
+
 
 
 

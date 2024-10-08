@@ -5,7 +5,7 @@
 names = [0] *5
 tam = len(names)
 for x in range(tam):
-    names[x]  = input(f"Digite o {x+1}º Nome: ")
+    names[x] = input(f"Digite o {x+1}º Nome: ")
 for i in range(tam):
     print(names[i], end = "|")
 print()
