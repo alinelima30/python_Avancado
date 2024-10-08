@@ -8,4 +8,6 @@ texto("eu amo vocês!")"""
 #Faça uma função que receba uma lista como argumento e crie uma nova lista,
 # somente com números únicos. Exemplo: a[10,12,12,31,4,4,5,31,6,7,6,8] nova_lista[10,12,31,4,5,6,7,8]
 
-
+from Biblioteca import *
+lista_a=[10,12,12,31,4,4,5,31,6,7,6,8]
+listaUnica(lista_a)

@@ -15,7 +15,6 @@ def somar(n1,n2,n3,n4,n5):
     soma= n1+n2+n3+n4+n5
     print(soma)
 
-
 def adicao(*numeros):
     adicao = 0
     for x in (numeros):
@@ -31,5 +30,13 @@ def texto(texto):
     tam = len(texto)
     for x in range(tam - 1, -1, -1):
         print(texto[x], end="")
+
+def listaUnica(a):
+    nova_lista=[]
+    for x in a:
+        if x not in nova_lista:
+            nova_lista.append(x)
+    print(nova_lista)
+
 
 
