@@ -14,5 +14,5 @@ listaUnica(lista_a)"""
 
 #Faça um função que recebe um número como parâmetro e verifique se este número é primo.
 
-from Biblioteca import *
-num_primo(19)
+"""from Biblioteca import *
+print(num_primo(5))"""

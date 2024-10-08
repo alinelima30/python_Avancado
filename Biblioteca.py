@@ -40,16 +40,15 @@ def listaUnica(a):
 
 def num_primo(numero):
     if numero == 1:
-        print("Não é Primo")
+        return numero, "Não é primo"
     elif numero == 2:
-        print("É Primo")
+        return numero, "É primo"
     else:
         for x in range(2,numero):
             if (numero % x==0):
-                print("Não é Primo")
-                break
-            print("É primo")
-            break
+                return numero, "Não é primo"
+            return numero, "É primo"
+
 
 
 
