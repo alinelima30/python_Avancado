@@ -1,27 +1,46 @@
-rep=0
-opcao=0
-pin=0
-nome=[0]
-senha=[0]
-tam=len(nome)
-while opcao !=4 and rep <=3:
-	print("<<" * 10)
-	print(" [1] para Cadastrar;\n [2] para Mostrar Cadastro;\n [3] para Login;\n [4] para Sair;")
-	print("<<" * 10)
-	opcao = int(input("Escolha uma Opção: "))
-	print("<<" * 10)
-	if opcao ==1:
-		for x in range(tam):
-			nome[x]= input("Digite seu Nome: ")
-			senha[x]= int(input("Digite sua Senha: "))
-	elif opcao ==2:
-		for j in range(tam):
-			print(f"Nome:{nome[j]} Senha:{senha[j]} Posição:{[j]}")
-	elif opcao ==3:
-		usuario= input("Usuário: ")
-        pin= int(input("Senha: "))
-        for i in range(tam):
-            if usuario != opcao ==1:
-                print("Usuario Inválido!")
-            elif senha != opcao ==1:
-                print("Senha Inválida!")
+opcao = 0
+rep = 0
+usuarios = []
+senhas = []
+
+while opcao != 4 and rep < 3:
+    print("<<" * 15)
+    print("MENU:\n 1. Para Cadastro;\n 2. Mostrar Cadastro;\n 3. Para Login;\n 4. Sair.")
+    print("<<" * 15)
+    opcao = int(input("Escolha Uma Opção: "))
+    print("<<" * 15)
+
+    if opcao == 1:
+        print("Cadastro:\n")
+        usuario = input("Digite Seu Nome: ")
+        senha = int(input("Digite Sua Senha: "))
+        usuarios.append(usuario)
+        senhas.append(senha)
+    elif opcao == 2:
+        print("Mostrar Cadastro:\n")
+        for y in range(len(usuarios)):
+            print(f"Usuário: {usuarios[y]} | Senha: {senhas[y]} | Posição: {y}")
+    elif opcao == 3:
+        print("Login:\n")
+        usuario = input("Digite Seu Nome de Usuário: ")
+        senha = int(input("Digite Sua Senha: "))
+        if usuario in usuarios:
+            indice = usuarios.index(usuario)
+            if senhas[indice] == senha:
+                print(f"{usuario}, Login Efetuado Com Sucesso!")
+                rep = 0  
+            else: 
+                print("Senha Incorreta!")
+                rep += 1
+        else:
+            print("Usuário Não Encontrado!")
+            rep += 1
+    elif opcao == 4:
+        print("Você Saiu Do Programa!")
+    else:
+        print("Opção Inválida, Tente Novamente!")
+
+if rep >= 3:
+    print("Acesso Bloqueado!")
+
+print("Você Saiu do programa!")
