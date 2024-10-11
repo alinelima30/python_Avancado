@@ -43,4 +43,4 @@ while opcao != 4 and rep < 3:
 if rep >= 3:
     print("Acesso Bloqueado!")
 
-print("Você Saiu do programa!")
+print("Programa Finalizado!")
