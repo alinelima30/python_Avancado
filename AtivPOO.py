@@ -12,4 +12,4 @@ p1.comer()"""
 """from Biblioteca import *
 a1 = Gato("Gato", "Pretinho")
 a1.comer()
-a1.miar()"""
+a1.miar() """
