@@ -31,4 +31,4 @@ c1.aposentar()
 c1.aquecer()
 c1.correr()
 t1 = TriAtleta("Joy", 22)
-t1.nadar()
+t1.nadar()""

@@ -84,13 +84,81 @@ class Animal:
         self.nome =nome
         self.cor =cor
     def comer(self):
-            print(f"O {self.nome}: Está comendo!")
+            print(f"{self.nome} é {self.cor} e está comendo!")
 
 class Gato(Animal):
     def __init__(self,nome,cor):
-     super().__init__(nome,cor)
+        super().__init__(nome,cor)
     def miar(self):
-        print(f"O {self.nome}: Está miando! ")
+        print(f"O Gato {self.nome} é {self.cor} e está miando!")
+
+class Cachorro(Animal):
+    def __init__(self,nome,cor):
+        super().__init__(nome, cor)
+    def latir(self):
+        print(f"O Cachorro {self.nome} é {self.cor} e está latindo")
+    def comer(self):
+        print(f"O Cachorro {self.nome} está comendo!")
+
+class Coelho(Animal):
+    def __init__(self, nome, cor):
+            super().__init__(nome, cor)
+    def chiar(self):
+            print(f"O Coelho {self.nome} é {self.cor} e está chiando: iihihihih")
+
+class Atleta:
+    def __init__(self,nome,peso):
+        self.nome = nome
+        self.peso = peso
+        self.aquecido = False
+        self.aposentado = False
+
+    def aposentar(self):
+        if self.aposentado == False:
+            print(f"O Atleta{self.nome} foi aposentado!")
+            self.aposentado = True
+        else:
+            print(f"O Atleta {self.nome} não pode aposentar porque á está na rede!")
+
+    def aquecer(self):
+            if self.aquecido == False:
+                if self.aposentado == False:
+                    print(f"O Atleta {self.nome} está aquecido!")
+                    self.aquecido= True
+                else:
+                print(f"O Atleta{self.nome}  não pode aquecer pois está aposentado!")
+
+            else:
+                print(f"O Atleta {self.nome} não pode aquecer pois já está aquecendo!")
+
+class Corredor:
+    def __init__(self, nome, peso):
+        super().__init__(nome, peso)
+    def correr(self):
+        if self.aquecido==True:
+            print(f"O Atleta {self.nome} foi correr!")
+        else:
+            print(f"Não pode correr pois não aqueceu!")
+
+
+
+class Nadador:
+
+
+
+class Ciclista:
+
+
+class TriAtleta:
+
+
+
+
+
+
+
+
+
 
 
 
