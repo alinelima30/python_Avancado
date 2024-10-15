@@ -1,6 +1,3 @@
-
-
-
 def imprimir_nome(nome):
     print(f"Nome: {nome}")
     imprimir_nome("Erickson")
@@ -47,7 +44,55 @@ def num_primo(numero):
         for x in range(2,numero):
             if (numero % x==0):
                 return numero, "Não é primo"
-            return numero, "É primo"
+            return numero, "É primo"""
+
+class Pessoa:
+    def __init__(self,nome,peso,idade): #método_construtor
+        self.nome=nome
+        self.peso=peso
+        self.idade=idade
+        self.comendo=False
+        self.andando=False
+        self.dormindo=False
+    def comer(self):
+        if self.comendo == False:
+            if self.andando == False:
+                if self.dormindo == False:
+                    print(f"{self.nome}, Foi comer!")
+                    self.comendo = True
+                else:
+                    print(f"{self.nome}, Não pode comer pois está dormindo!")
+            else:
+                print(f"{self.nome}, Não pode comer pois está andando!")
+        else:
+            print(f"{self.nome}, já estava comendo!")
+    def andar(self):
+        if self.andando == False:
+            if self.comendo == False:
+                if self.dormindo == False:
+                    print(f"{self.nome} Foi andar!")
+                    self.andando = True
+                else:
+                    print(f"{self.nome}, Não pode andar pois está dormindo!")
+            else:
+                print(f"{self.nome}, Não pode andar pois está comendo!")
+        else:
+            print(f"{self.nome}, Já estava andando!")
+
+class Animal:
+    def __init__(self,nome,cor):
+        self.nome =nome
+        self.cor =cor
+    def comer(self):
+            print(f"O {self.nome}: Está comendo!")
+
+class Gato(Animal):
+    def __init__(self,nome,cor):
+     super().__init__(nome,cor)
+    def miar(self):
+        print(f"O {self.nome}: Está miando!")
+
+
 
 
 
