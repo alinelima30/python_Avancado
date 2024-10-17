@@ -106,7 +106,7 @@ class Coelho(Animal):
     def chiar(self):
             print(f"O Coelho {self.nome} é {self.cor} e está chiando: iihihihih")
 
-class Atleta:
+"""class Atleta:
     def __init__(self,nome,peso):
         self.nome = nome
         self.peso = peso
@@ -149,14 +149,31 @@ class Nadador:
 class Ciclista:
 
 
-class TriAtleta:
+class TriAtleta:"""
+
+"""with open("teste01.txt", "a",encoding='UTF-8') as arq:
+    texto = input("Digite um tesxto: ")
+    arq.write(f"{texto}\n")
+
+with open("teste01.txt", "r") as arq2:
+    texto2 = arq2.read()
+    print(texto2)"""
 
 
-
-
-
-
-
+def cadastrar(t):
+    with open("teste01.txt", "a",encoding='UTF-8') as arq:
+        arq.write(f"{t}\n")
+def mostrar():
+    with open("teste01.txt", "r") as arq2:
+        texto2 = arq2.read()
+        print(texto2)
+def pesquisar(texto):
+    cont=0
+    with open("teste01.txt", "r") as arq2:
+        for x in arq2:
+            if texto in x:
+                cont+=1
+    print(cont)
 
 
 

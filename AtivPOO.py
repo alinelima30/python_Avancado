@@ -25,10 +25,10 @@ from Biblioteca import *
 a1 = Coelho("Ig", "Malhado")
 a1.chiar()
 
-from Biblioteca import *
+"""from Biblioteca import *
 c1 = Corredor("Joy", 65)
 c1.aposentar()
 c1.aquecer()
 c1.correr()
 t1 = TriAtleta("Joy", 22)
-t1.nadar()""
+t1.nadar()"""""
