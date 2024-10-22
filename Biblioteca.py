@@ -151,7 +151,7 @@ class Ciclista:
 
 class TriAtleta:"""
 
-"""with open("teste01.txt", "a",encoding='UTF-8') as arq:
+"""with open("teste01.txt", "a",encoding='UTF-8') as arq: #(exemplo no "teste01.txt")
     texto = input("Digite um tesxto: ")
     arq.write(f"{texto}\n")
 
